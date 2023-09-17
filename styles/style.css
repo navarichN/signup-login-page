@@ -1,0 +1,151 @@
+@font-face {
+    font-family: NunitoBlack;
+    src: url("../fonts/Nunito-Black.ttf");
+}
+
+@font-face {
+    font-family: NunitoBold;
+    src: url("../fonts/Nunito-Bold.ttf");
+}
+
+.header {
+    position: relative;
+    z-index: 1;
+}
+
+.header__container {
+    margin: 0 auto;
+    max-width: 1091px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+}
+
+.logo {
+    font-family: NunitoBlack, sans-serif;
+    text-transform: uppercase;
+    max-width: 282px;
+}
+
+.logo__text {
+    font-size: 36px;
+    color: #000000;
+    text-align: center;
+}
+
+.logo__text_bigger {
+    font-size: 48px;
+    color: #D72F3F;
+}
+
+.background {
+    position: absolute;
+    display: grid;
+    z-index: -1;
+    grid-template-areas:
+        "background_left background_right";
+    width: 100%;
+    height: 1185px;
+}
+
+.background_left {
+    background-color: #FFFFFB;
+}
+
+.background_right {
+    background-color: #F8F8FA;
+}
+
+.registration {
+    margin-top: 65px;
+}
+
+.registration__container {
+    margin: 0 auto;
+    max-width: 1091px;
+    display: grid;
+    grid-template-areas:
+        "registration__info registration__img";
+    z-index: 2;
+}
+
+.registration__info {
+    display: flex;
+    flex-direction: column;
+    max-width: 543px;
+    height: 794px;
+    font-family: NunitoBold, sans-serif;
+}
+
+.registration__title {
+    font-size: 36px;
+    margin-bottom: 0;
+}
+
+.registration__description {
+    font-size: 22px;
+    color: #636363;
+    margin-bottom: 72px;
+}
+
+.registration__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 452px;
+}
+
+label:not(label[for=checkbox]) {
+    color: #C6C6C4;
+    margin-bottom: 5px;
+}
+
+label[for=checkbox] {
+    color: black;
+    font-size: 16px;
+    height: 25px;
+    padding: 7px 0 0 0;
+    margin: 3px 0 40px 0;
+}
+
+input:not([type=checkbox]) {
+    border-bottom: 1px solid #C6C6C4;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+input[type=checkbox] {
+    margin-right: 10px;
+}
+
+input[value] {
+    font-size: 20px;
+}
+
+.actions__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button[type=submit] {
+    width: 210px;
+    height: 70px;
+    border-radius: 40px;
+    background-color: #DD3142;
+    color: #ffffff;
+    cursor: pointer;
+    margin-bottom: 44px;
+}
+
+.registration-img {
+    margin-left: 11px;
+    margin-top: 55px;
+}
+
+.registration-img__img{
+    max-width: 543px;
+    height: 600px;
+}
